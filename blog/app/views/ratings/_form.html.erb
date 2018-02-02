@@ -1,14 +1,16 @@
 
 <%= form_with(model: [ @article, @article.ratings.build ]) do |form| %>
-  <p>
-    <%= form.label :user %><br>
-    <%= form.text_field :user %>
-  </p>
-  <p>
-    <%= form.label :score %><br>
-    <%= form.text_area :score %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+
+	<p>
+    	<%= form.label :user %><br>
+    	<%= form.text_field :user %>
+    </p>
+    <p>
+   		<%= form.label :score %><br>
+    	<%= form.text_area :score %>
+    </p>
+    <p>
+    	<%= form.submit %>
+	</p> 
+
 <% end %>
